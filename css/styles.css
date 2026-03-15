@@ -331,7 +331,7 @@ main {
 }
 .tl-item {
   display: grid;
-  grid-template-columns: 46px 1fr;
+  grid-template-columns: 1000px 1fr;
   gap: 1.2rem;
   margin-bottom: 1.5rem;
 }
@@ -346,10 +346,6 @@ main {
   position: relative;
   z-index: 1;
 }
-.tl-dot.red   { border-color: var(--accent); background: var(--tag-r); }
-.tl-dot.blue  { border-color: var(--acc2);   background: var(--tag-b); }
-.tl-dot.green { border-color: var(--acc3);   background: var(--tag-g); }
-.tl-dot.yell  { border-color: var(--acc4);   background: var(--tag-y); }
 .tl-body {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -421,18 +417,157 @@ footer {
   padding: 1.5rem;
 }
 footer strong { color: rgba(255,255,255,.8); }
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE — TABLETAS  (601px – 900px)
+   ═══════════════════════════════════════════ */
+@media (min-width: 601px) and (max-width: 900px) {
  
-/* ── RESPONSIVE ── */
-@media (max-width: 800px) {
-  .header-inner  { grid-template-columns: 1fr; }
-  .header-deco   { display: none; }
-  .intro-block   { grid-template-columns: 1fr; }
-  .sol-cols      { grid-template-columns: 1fr; }
-  .sol-col + .sol-col { border-left: none; border-top: 1px solid var(--border); }
+  /* Header */
+  .header-inner {
+    grid-template-columns: 1fr;
+    padding: 3rem 0 2.5rem;
+  }
+  .header-deco { display: none; }
+  h1 { font-size: 2.4rem; }
+  .header-subtitle { font-size: .95rem; max-width: 100%; }
+  .header-meta { gap: 1.5rem; }
+ 
+  /* Main */
+  main { padding: 0 2rem; }
+ 
+  /* Section headers */
+  .section-header { padding: 2.5rem 0 1.5rem; }
+ 
+  /* Intro block */
+  .intro-block {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1.8rem;
+    gap: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .areas-grid { grid-template-columns: 1fr 1fr; }
+ 
+  /* Problem cards */
+  .pcb { padding: 1.2rem 1.5rem; }
+  .problem-cards { gap: 1rem; }
+ 
+  /* Solution cards */
+  .sol-cols { grid-template-columns: 1fr; }
+  .sol-col + .sol-col {
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+  .sol-col { padding: 1.2rem 1.5rem; }
+  .sol-area-bar { padding: .85rem 1.5rem; }
+  .infra-section { padding: 1.2rem 1.5rem; }
+  .infra-cards { grid-template-columns: 1fr 1fr; }
+ 
+  /* Timeline */
+  .tl-body { padding: 1rem 1.2rem; }
+  .tl-desc { font-size: 13px; }
+ 
+  /* Summary */
   .visual-summary { grid-template-columns: 1fr 1fr; }
-}
-@media (max-width: 520px) {
-  .areas-grid     { grid-template-columns: 1fr; }
-  .visual-summary { grid-template-columns: 1fr 1fr; }
+  .summary-num { font-size: 1.9rem; }
+ 
+  /* Page links */
+  .page-links { grid-template-columns: 1fr 1fr; }
 }
  
+/* ═══════════════════════════════════════════
+   RESPONSIVE — MÓVILES  (hasta 600px)
+   ═══════════════════════════════════════════ */
+@media (max-width: 600px) {
+ 
+  /* Header */
+  .header-inner {
+    grid-template-columns: 1fr;
+    padding: 2.5rem 0 2rem;
+  }
+  .header-deco { display: none; }
+  h1 { font-size: 1.9rem; line-height: 1.15; }
+  .header-badge { font-size: 10px; padding: 4px 10px; }
+  .header-subtitle { font-size: .9rem; margin-top: 1rem; }
+  .header-meta { gap: 1rem; margin-top: 1.5rem; }
+  .meta-value { font-size: 13px; }
+ 
+  /* Nav */
+  nav { padding: 0 1rem; }
+  .nav-inner a { font-size: 12px; padding: .75rem .9rem; }
+ 
+  /* Main */
+  main { padding: 0 1rem; }
+ 
+  /* Section headers */
+  .section-header { padding: 2rem 0 1.2rem; gap: .6rem; }
+  .section-num { font-size: .65rem; }
+  h2 { font-size: 1.3rem; }
+ 
+  /* Intro block */
+  .intro-block {
+    grid-template-columns: 1fr;
+    padding: 1.2rem;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .intro-text p { font-size: 14px; }
+  .areas-grid { grid-template-columns: 1fr; gap: 8px; }
+  .area-chip { padding: 10px 12px; font-size: 13px; }
+ 
+  /* Problem cards */
+  .problem-card { grid-template-columns: 4px 1fr; }
+  .pcb { padding: 1rem 1.1rem; }
+  .pch h3 { font-size: 1rem; }
+  .pl li { font-size: 13px; }
+  .problem-cards { gap: 1rem; margin-bottom: 2rem; }
+ 
+  /* Solution cards */
+  .sol-cols { grid-template-columns: 1fr; }
+  .sol-col + .sol-col {
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+  .sol-col { padding: 1rem 1.1rem; }
+  .sol-col ul li { font-size: 13px; }
+  .sol-area-bar { padding: .75rem 1.1rem; }
+  .infra-section { padding: 1rem 1.1rem; }
+  .infra-cards { grid-template-columns: 1fr; gap: 10px; }
+  .infra-card { padding: 1rem; }
+  .infra-card-title { font-size: 12.5px; }
+  .infra-card-desc { font-size: 12px; }
+  .itag { font-size: 10.5px; padding: 2px 8px; }
+  .solution-block { margin-bottom: 2.5rem; }
+ 
+  /* Timeline */
+  .tl-item {
+    grid-template-columns: 38px 1fr;
+    gap: .8rem;
+  }
+  .tl-dot { width: 38px; height: 38px; font-size: .95rem; }
+  .timeline::before { left: 18px; }
+  .tl-body { padding: .9rem 1rem; }
+  .tl-title { font-size: .9rem; }
+  .tl-desc { font-size: 12.5px; }
+  .timeline { margin-bottom: 2.5rem; }
+ 
+  /* Summary */
+  .visual-summary {
+    grid-template-columns: 1fr 1fr;
+    gap: .75rem;
+    margin: 1.5rem 0 3rem;
+  }
+  .summary-card { padding: 1.1rem; }
+  .summary-num { font-size: 1.7rem; }
+  .summary-lbl { font-size: 12px; }
+  .summary-sub { font-size: 10px; }
+ 
+  /* Page links */
+  .page-links { grid-template-columns: 1fr; gap: .75rem; margin-bottom: 2.5rem; }
+  .page-link { padding: 1.2rem; }
+  .page-link-icon { font-size: 1.5rem; }
+  .page-link-title { font-size: .95rem; }
+ 
+  /* Footer */
+  footer { font-size: 11px; padding: 1.2rem 1rem; margin-top: 3rem; }
+}
