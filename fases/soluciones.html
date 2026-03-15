@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fase 2 — Soluciones · Transformación Digital</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+ 
+<header>
+  <div class="header-inner">
+    <div>
+      <div class="header-badge"><span>Fase 2</span> &nbsp;·&nbsp; Soluciones</div>
+      <h1>Propuestas digitales<br><em>y plan de formación</em></h1>
+      <p class="header-subtitle">Soluciones digitales, objetivos del PTD e infraestructura necesaria para cada área de mejora.</p>
+    </div>
+  </div>
+</header>
+ 
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html">Inicio</a>
+    <a href="./diagnostico.html">Fase 1 · Diagnóstico</a>
+    <a href="./soluciones.html" class="active">Fase 2 · Soluciones</a>
+    <a href="./calendario.html">Calendario</a>
+    <a href="./resumen.html">Resumen</a>
+  </div>
+</nav>
+ 
+<main>
+ 
+  <div class="section-header">
+    <span class="section-num">Fase 2</span>
+    <div class="section-line"></div>
+    <h2>Propuesta de soluciones digitales y PTD</h2>
+  </div>
+ 
+  <div class="solution-block">
+ 
+    <!-- SALUD -->
+    <div class="sol-card" id="salud">
+      <div class="sol-area-bar"><span class="tag red">Salud</span></div>
+      <div class="sol-cols">
+        <div class="sol-col">
+          <p class="sol-col-label">Propuestas de solución digital</p>
+            <p>Implementar un <strong>sistema de firmas digitales</strong> para que los padres otorguen el consentimiento médico de sus hijos de forma remota y legalmente válida.
+                <strong>Asignar roles de acceso</strong> mediante Active Directory o RBAC: solo el personal médico podrá consultar los datos clínicos de los alumnos.
+                Almacenar los datos en la <strong>nube con cifrado de extremo a extremo</strong> para proteger la intimidad del alumnado.
+            </p>
+        </div>
+        <div class="sol-col">
+          <p class="sol-col-label">Objetivos del PTD</p>
+            <p>Capacitar al personal en el <strong>uso de herramientas de firma electrónica</strong> y gestión documental con validez legal.
+                Formar al personal en <strong>privacidad y protección de datos</strong> (LOPD / RGPD), enfatizando la responsabilidad en el manejo de información sensible.
+            </p>
+        </div>
+      </div>
+      <div class="infra-section">
+        <p class="infra-label">Infraestructura, personal y momento de implantación</p>
+        <div class="infra-cards">
+          <div class="infra-card">
+            <div class="infra-card-title">Servidor de Active Directory / LDAP</div>
+            <div class="infra-card-desc">Se necesita un servidor (Windows Server con AD o Linux con OpenLDAP) para gestionar los roles y permisos de cada empleado. Solo el personal médico autorizado podrá consultar los expedientes clínicos. Lo ideal es que una persona técnica lo configure durante el verano, cuando no hay alumnos y las interrupciones de servicio no afectan al día a día del centro.</div>
+            <div class="infra-tags">
+              <span class="itag people">1–2 técnicos TI</span>
+              <span class="itag time">Julio – agosto</span>
+              <span class="itag warn">Sin actividad lectiva</span>
+            </div>
+          </div>
+          <div class="infra-card">
+            <div class="infra-card-title">Servicio cloud con cifrado (Microsoft 365 / Google Workspace)</div>
+            <div class="infra-card-desc">Contratación y configuración de un servicio cloud con cifrado de extremo a extremo para almacenar los expedientes médicos. Una persona técnica realiza la configuración inicial y la migración de documentos existentes. Agosto es el mejor momento porque el volumen de nuevos documentos es mínimo.</div>
+            <div class="infra-tags">
+              <span class="itag people">1 técnico TI</span>
+              <span class="itag time">Agosto</span>
+            </div>
+          </div>
+          <div class="infra-card">
+            <div class="infra-card-title">Plataforma de firma digital (DocuSign / Signaturit)</div>
+            <div class="infra-card-desc">Integración de un servicio de firma electrónica certificada para los consentimientos de los padres. Una persona técnica configura los flujos de firma y una persona administrativa forma al resto del personal. Lo ideal es tenerlo listo antes del inicio de curso para que las familias firmen desde el primer día.</div>
+            <div class="infra-tags">
+              <span class="itag people">1 técnico + 1 admin</span>
+              <span class="itag time">Julio – agosto</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- CAPTACIÓN -->
+    <div class="sol-card" id="captacion">
+      <div class="sol-area-bar"><span class="tag blue">Captación de alumnos</span></div>
+      <div class="sol-cols">
+        <div class="sol-col">
+          <p class="sol-col-label">Propuestas de solución digital</p>
+            <p>Crear una <strong>plataforma online</strong> donde las instalaciones y el proyecto educativo estén disponibles los 365 días del año.
+                Diseñar una <strong>página web con formulario de contacto</strong> para que las familias interesadas dejen sus datos en cualquier momento.
+                Organizar <strong>sesiones informativas online</strong> (webinars) y campañas de publicidad digital para ampliar el alcance del centro.
+            </p>
+        </div>
+        <div class="sol-col">
+          <p class="sol-col-label">Objetivos del PTD</p>
+            <p>Formar al equipo docente en la <strong>creación y gestión de contenido digital</strong> para la web del centro.
+                Capacitar al personal en el uso de <strong>herramientas de comunicación digital y redes sociales</strong> con fines educativos.
+                Enseñar a organizar y gestionar <strong>reuniones informativas por videoconferencia</strong> para familias interesadas.
+            </p>
+        </div>
+      </div>
+      <div class="infra-section">
+        <p class="infra-label">Infraestructura, personal y momento de implantación</p>
+        <div class="infra-cards">
+          <div class="infra-card">
+            <div class="infra-card-title">Servidor web + dominio + CMS</div>
+            <div class="infra-card-desc">Se necesita contratar un servidor VPS o cloud (AWS, Azure, hosting compartido), registrar el dominio del centro e instalar un CMS (WordPress u otro). Una persona técnica configura el servidor y un docente o administrativo se encarga del contenido. Lo mejor es hacerlo en junio-julio para que la web esté activa antes del proceso de matrícula de septiembre.</div>
+            <div class="infra-tags">
+              <span class="itag people">1 técnico web</span>
+              <span class="itag time">Junio – julio</span>
+            </div>
+          </div>
+          <div class="infra-card">
+            <div class="infra-card-title">Formulario de captación + CRM básico</div>
+            <div class="infra-card-desc">Integración de un formulario de captación en la web, conectado a un CRM gratuito (HubSpot free, Zoho CRM) para hacer seguimiento de familias interesadas. Una persona administrativa gestiona el CRM durante el curso. La configuración se hace en julio junto con la web.</div>
+            <div class="infra-tags">
+              <span class="itag people">1 técnico + 1 admin</span>
+              <span class="itag time">Julio</span>
+            </div>
+          </div>
+          <div class="infra-card">
+            <div class="infra-card-title">Tour virtual y contenido multimedia</div>
+            <div class="infra-card-desc">Grabación y edición de vídeos del centro e integración de una visita virtual 360° (Matterport u otro servicio). Se aloja en YouTube o en el proveedor del tour. El mejor momento es julio: las aulas están vacías y bien ordenadas, sin presencia de alumnos que compliquen la grabación.</div>
+            <div class="infra-tags">
+              <span class="itag people">1 persona (grabación/edición)</span>
+              <span class="itag time">Julio</span>
+              <span class="itag warn">Aulas vacías, sin alumnos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- COMUNICACIÓN -->
+    <div class="sol-card" id="comunicacion">
+      <div class="sol-area-bar"><span class="tag green">Comunicación con las familias</span></div>
+      <div class="sol-cols">
+        <div class="sol-col">
+          <p class="sol-col-label">Propuestas de solución digital</p>
+            <p>Utilizar un <strong>servidor de correo electrónico corporativo</strong> (Gmail Workspace, Microsoft 365) para centralizar y agilizar toda la comunicación con las familias.
+                Emplear aplicaciones de <strong>videoconferencia</strong> (Zoom, Google Meet) para reuniones urgentes con padres o tutores.
+                Implantar una <strong>plataforma de mensajería escolar</strong> (Additio, iEduca…) con confirmación de lectura por parte de los padres.
+            </p>
+        </div>
+        <div class="sol-col">
+          <p class="sol-col-label">Objetivos del PTD</p>
+            <p><strong>Digitalizar la comunicación</strong> entre el centro y las familias para eliminar la dependencia del papel.
+                Garantizar que la información llegue <strong>directamente a los padres/tutores</strong>, sin pasar por el alumnado.
+                Mejorar la <strong>rapidez y eficiencia</strong> en el envío de avisos, circulares e incidencias.
+            </p>
+        </div>
+      </div>
+      <div class="infra-section">
+        <p class="infra-label">Infraestructura, personal y momento de implantación</p>
+        <div class="infra-cards">
+          <div class="infra-card">
+            <div class="infra-card-title">Servidor de correo corporativo (Microsoft 365 / Google Workspace)</div>
+            <div class="infra-card-desc">Contratación del servicio y configuración del dominio de correo del centro. Una persona técnica crea todas las cuentas del personal docente y administrativo, configura las listas de distribución por cursos y establece las políticas de seguridad. Lo ideal es hacerlo en agosto para que todo el personal empiece el curso con su cuenta activa.</div>
+            <div class="infra-tags">
+              <span class="itag people">1 técnico TI</span>
+              <span class="itag time">Agosto</span>
+            </div>
+          </div>
+          <div class="infra-card">
+            <div class="infra-card-title">Plataforma de mensajería escolar (Additio, iEduca, Alexia…)</div>
+            <div class="infra-card-desc">Implantación de un software de comunicación escolar que envía notificaciones directamente a los padres con confirmación de lectura. Una persona técnica lo configura y una persona administrativa forma al claustro en su uso antes de que empiece el curso.</div>
+            <div class="infra-tags">
+              <span class="itag people">1 técnico + 1 admin</span>
+              <span class="itag time">Agosto – septiembre</span>
+            </div>
+          </div>
+          <div class="infra-card">
+            <div class="infra-card-title">Formación del claustro en herramientas digitales</div>
+            <div class="infra-card-desc">Sesiones prácticas para el claustro y el personal administrativo sobre correo corporativo, plataforma de mensajería y videoconferencia. Se recomienda la semana previa al inicio de curso: no hay alumnos y el personal está disponible sin interrupciones de clases.</div>
+            <div class="infra-tags">
+              <span class="itag people">1 formador + todo el personal</span>
+              <span class="itag time">Semana previa al inicio de curso</span>
+              <span class="itag warn">Sin alumnos presentes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- ECONOMÍA -->
+    <div class="sol-card" id="economia">
+      <div class="sol-area-bar"><span class="tag yell">Gestión económica</span></div>
+      <div class="sol-cols">
+        <div class="sol-col">
+          <p class="sol-col-label">Propuestas de solución digital</p>
+            <p>Utilizar un <strong>servidor NAS o almacenamiento cloud centralizado</strong> para guardar los datos económicos, accesible desde varios equipos autorizados.
+                Configurar <strong>copias de seguridad automáticas</strong>: diarias incrementales y semanales completas.
+                Implementar un <strong>software de gestión económica en red o en la nube</strong> (ERP) accesible para dirección, secretaría y contabilidad.
+                Instalar sistemas de <strong>seguridad informática</strong>: firewall perimetral, antivirus centralizado y política de actualizaciones automáticas.
+            </p>
+        </div>
+        <div class="sol-col">
+          <p class="sol-col-label">Objetivos del PTD</p>
+            <p>Mejorar la gestión económica mediante <strong>herramientas digitales seguras y accesibles</strong>, garantizando la protección de los datos.
+                Facilitar el <strong>acceso controlado</strong> al personal autorizado y la continuidad del servicio.
+                Formar al personal en <strong>software de gestión, almacenamiento seguro y ciberseguridad</strong>.
+            </p>
+        </div>
+      </div>
+      <div class="infra-section">
+        <p class="infra-label">Infraestructura, personal y momento de implantación</p>
+        <div class="infra-cards">
+          <div class="infra-card">
+            <div class="infra-card-title">Servidor NAS o almacenamiento cloud centralizado</div>
+            <div class="infra-card-desc">Se necesita un servidor NAS en red local (Synology, QNAP…) o un servicio cloud corporativo (OneDrive for Business, Google Drive) para centralizar todos los documentos económicos. Una persona técnica lo instala, configura los permisos y migra los datos del ordenador del administrador. El verano es ideal porque el flujo de documentos es mínimo y la migración no interrumpe ningún proceso activo.</div>
+            <div class="infra-tags">
+              <span class="itag people">1 técnico TI</span>
+              <span class="itag time">Julio – agosto</span>
+              <span class="itag warn">Flujo económico mínimo en verano</span>
+            </div>
+          </div>
+          <div class="infra-card">
+            <div class="infra-card-title">Sistema de copias de seguridad automáticas (Veeam / Acronis)</div>
+            <div class="infra-card-desc">Configuración de un sistema de backup con copias diarias incrementales y semanales completas, almacenadas en un segundo servidor o servicio cloud externo. Una persona técnica lo configura en verano y verifica su funcionamiento antes del nuevo curso. Requiere revisión mensual durante el año.</div>
+            <div class="infra-tags">
+              <span class="itag people">1 técnico TI</span>
+              <span class="itag time">Agosto</span>
+              <span class="itag warn">Revisión mensual durante el curso</span>
+            </div>
+          </div>
+          <div class="infra-card">
+            <div class="infra-card-title">Software de gestión económica / ERP (Odoo, Sage, Alexia…)</div>
+            <div class="infra-card-desc">Implantación de un ERP educativo accesible en red para dirección, secretaría y contabilidad. Una persona técnica instala y configura el sistema, y el administrador migra los datos históricos. Lo mejor es hacerlo en verano para que el nuevo curso empiece directamente en el nuevo sistema, sin convivencia con el sistema anterior.</div>
+            <div class="infra-tags">
+              <span class="itag people">1 técnico + 1 admin contable</span>
+              <span class="itag time">Julio – agosto</span>
+            </div>
+          </div>
+          <div class="infra-card">
+            <div class="infra-card-title">Firewall, antivirus centralizado y política de actualizaciones</div>
+            <div class="infra-card-desc">Instalación de un firewall perimetral (pfSense, Fortinet…), solución antivirus centralizada (ESET, Bitdefender GravityZone…) y actualizaciones automáticas en todos los equipos. El verano es el momento ideal: los equipos no están en uso constante y se pueden reiniciar sin afectar ninguna clase o proceso administrativo. Revisión anual en cada verano posterior.</div>
+            <div class="infra-tags">
+              <span class="itag people">1–2 técnicos TI</span>
+              <span class="itag time">Julio – agosto</span>
+              <span class="itag warn">Revisión anual cada verano</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+ 
+  <div style="text-align:center;padding-bottom:3rem;">
+    <a href="./calendario.html" style="display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;text-decoration:none;padding:.8rem 1.8rem;border-radius:100px;font-size:14px;font-weight:500;transition:opacity .2s;" onmouseover="this.style.opacity='.8'" onmouseout="this.style.opacity='1'">
+      Ver calendario de implantación →
+    </a>
+  </div>
+ 
+</main>
+ 
+<footer>
+  <strong>Proyecto de Transformación Digital de una Escuela Tradicional</strong> · ASIX – 1665 Digitalitzación · Proyecto Final
+</footer>
+ 
+</body>
+</html>
